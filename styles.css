@@ -1,0 +1,101 @@
+:root {
+    /*las variables en css se definen con doble guion --variable-1*/
+    --main-bg-color:#393f49;
+    --white-color:whitesmoke;
+    --blue-color:#61dbfb;
+    --grey-color:#8d9196;
+    --green-color:#61e786;
+    --red-color:#dc3545;
+}
+
+ * {
+     color: var(--white-color);
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+ }
+
+body {
+    font-family: "Roboto";
+    background-color: var(--main-bg-color) ;
+    width: 100%;
+    border: 1px dashed red;
+}
+
+main{
+    border: 1px dashed green;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#titulo-ppal{
+    margin-top: 16px;
+}
+/*para selecionar un elemento po ID se utilia el signo # al primcipio del nombre*/
+#contador-tareas-pendientes{
+    color:var(--blue-color);
+    font-size: 12px;
+    
+}
+.new-task-form  {
+    margin-top: 24px;
+
+}
+
+
+/*para seleccionar elementos por la propiedad class lo hacemos agegando un "." al principio del nombre de la clase*/
+.caja-de-texto{
+    width: 306px;
+    height: 39px;
+    border-radius: 5px;
+    color: black;
+    padding: 0 12px;/*Modificar por direccion arriba-abajo izquierda*/
+}
+
+.tasks-list{
+    list-style: none;
+    margin-top: 24px;
+}
+
+.button-list{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+
+}
+
+.boton {
+    height: 37px;
+    border-radius: 5px;
+    border:none;
+    font-weight: bold;
+    padding: 0 12px 0 12px; /*Modificar las 4 propiedades arriba derecha abajo izquierda como las manesillas del reloj*/
+}
+
+.submit-boton{
+    background-color: var(--blue-color);
+  
+}
+
+.clear-boton{
+    background-color: var(--red-color);
+ 
+}
+
+.remove-task-button{
+    background-color: transparent;
+    border: none;
+    padding: 0;
+}
+
+.button-list > i {
+    font-size: 20px;
+    transition: all 0.3s ease-in;
+}
+
+.fa-circle-check:hover {
+color: var(--green-color);
+}
+
+
